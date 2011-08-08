@@ -12,9 +12,11 @@
     <div id="container">
       <div id="header">
         <div class="content">
-          <h1><a href="/job">
-            <img src="/images/jobeet.gif" alt="Jobeet Job Board" />
-          </a></h1>
+          <h1>
+		  	<a href="<?php echo url_for('@homepage')?>">
+            	<img src="/images/logo.jpg" alt="Jobeet Job Board" />
+          	</a>
+		  </h1>
  
           <div id="sub_header">
             <div class="post">
