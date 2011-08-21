@@ -2,4 +2,8 @@
 # http://www.symfony-project.org/reference/1_4/en/11-App
 
 # default values
-#all:
+all:
+  active_days: 		   30
+  max_jobs_on_homepage: 10 
+  max_jobs_on_category: 20
+

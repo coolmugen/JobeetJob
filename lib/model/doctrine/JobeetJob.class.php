@@ -12,6 +12,16 @@
  */
 class JobeetJob extends BaseJobeetJob
 {
+	public function save(Doctrine_Connection $conn = null)
+	{
+		if ($this->isNew() && !$this->getExpiresAt())
+		{
+			$now = $this->getCreatedAt() ? $this->getDateTimeObject('created_at')->format('U') : time();
+			$this->setExpiresAt(date('Y-m-d h:i:s', time() + 86400 * sfConfig::get('app_active_days')));
+		}
+		return parent::save($conn);
+	}	
+
 	public function getCompanySlug()
 	{
 		return Jobeet::slugify($this->getCompany());
