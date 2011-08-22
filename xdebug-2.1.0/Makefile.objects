@@ -1,0 +1,42 @@
+xdebug.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug.c -o xdebug.lo 
+xdebug_code_coverage.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_code_coverage.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_code_coverage.c -o xdebug_code_coverage.lo 
+xdebug_com.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_com.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_com.c -o xdebug_com.lo 
+xdebug_compat.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_compat.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_compat.c -o xdebug_compat.lo 
+xdebug_handler_dbgp.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_handler_dbgp.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_handler_dbgp.c -o xdebug_handler_dbgp.lo 
+xdebug_handlers.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_handlers.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_handlers.c -o xdebug_handlers.lo 
+xdebug_llist.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_llist.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_llist.c -o xdebug_llist.lo 
+xdebug_hash.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_hash.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_hash.c -o xdebug_hash.lo 
+xdebug_private.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_private.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_private.c -o xdebug_private.lo 
+xdebug_profiler.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_profiler.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_profiler.c -o xdebug_profiler.lo 
+xdebug_set.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_set.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_set.c -o xdebug_set.lo 
+xdebug_stack.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_stack.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_stack.c -o xdebug_stack.lo 
+xdebug_str.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_str.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_str.c -o xdebug_str.lo 
+xdebug_superglobals.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_superglobals.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_superglobals.c -o xdebug_superglobals.lo 
+xdebug_tracing.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_tracing.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_tracing.c -o xdebug_tracing.lo 
+xdebug_var.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_var.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_var.c -o xdebug_var.lo 
+xdebug_xml.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_xml.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/xdebug_xml.c -o xdebug_xml.lo 
+usefulstuff.lo: /home/sfprojects/JobeetJob/xdebug-2.1.0/usefulstuff.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/home/sfprojects/JobeetJob/xdebug-2.1.0 $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /home/sfprojects/JobeetJob/xdebug-2.1.0/usefulstuff.c -o usefulstuff.lo 
+$(phplibdir)/xdebug.la: ./xdebug.la
+	$(LIBTOOL) --mode=install cp ./xdebug.la $(phplibdir)
+
+./xdebug.la: $(shared_objects_xdebug) $(XDEBUG_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_xdebug) $(XDEBUG_SHARED_LIBADD)
+

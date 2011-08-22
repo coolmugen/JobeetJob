@@ -1,0 +1,30 @@
+JobeetJob:
+<?php for ($i = 1; $i <= 30; $i++): ?>
+  job_<?php echo $i ?>:
+    JobeetCategory: design
+    company:      Company <?php echo $i."\n" ?>
+    position:     Web Developer
+    location:     Almaty, Kazakhstan
+    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    how_to_apply: |
+      Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
+    is_public:    true
+    is_activated: true
+    token:        job_<?php echo $i."\n" ?>
+    email:        job@example.com
+<?php endfor ?>
+
+<?php for ($i = 31; $i <= 35; $i++): ?>
+  job_<?php echo $i ?>:
+    JobeetCategory: administrator
+    company:      Company <?php echo $i."\n" ?>
+    position:     Web Developer
+    location:     Astana, Kazakhstan
+    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    how_to_apply: |
+      Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
+    is_public:    true
+    is_activated: true
+    token:        job_<?php echo $i."\n" ?>
+    email:        googme@gmail.com
+<?php endfor ?>

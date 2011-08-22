@@ -17,8 +17,13 @@ job_show_user:
 
 job:
   class:   sfDoctrineRouteCollection
-  options: { model: JobeetJob }
- 
+  options:
+    model:          JobeetJob
+    column:         token
+    object_actions: { publish: put }
+  requirements:
+    token: \w+
+         
 # default rules
 homepage:
   url:   /
