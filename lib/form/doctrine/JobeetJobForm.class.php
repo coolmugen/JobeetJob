@@ -12,7 +12,13 @@ class JobeetJobForm extends BaseJobeetJobForm
 {
   public function configure()
   {
- 	$this->useFields(array('category_id', 'type', 'company', 'logo', 'url', 'position', 'location', 'description', 								'how_to_apply', 'is_public', 'email'));  
+ 	$this->useFields(array('category_id', 'type', 'company', 'logo', 'url', 'position', 'location', 'description', 'how_to_apply', 'is_public', 'email'));  
+ 	$this->removeFields();
+ 
+    $this->validatorSchema['email'] = new sfValidatorAnd(array(
+      $this->validatorSchema['email'],
+      new sfValidatorEmail(),
+    ));								
  	
 	$this->validatorSchema['email'] = new sfValidatorAnd(array(
  		$this->validatorSchema['email'],
@@ -47,5 +53,13 @@ class JobeetJobForm extends BaseJobeetJobForm
 	));  
 	
 	$this->widgetSchema->setHelp('is_public', 'Whether the job can also be published on affiliate websites or not.');
+  }
+  protected function removeFields()
+  {
+    unset(
+      $this['created_at'], $this['updated_at'],
+      $this['expires_at'], $this['is_activated'],
+      $this['token']
+    );
   }
 }

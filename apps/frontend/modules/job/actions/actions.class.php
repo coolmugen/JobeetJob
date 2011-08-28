@@ -17,7 +17,8 @@ class jobActions extends sfActions
   public function executeShow(sfWebRequest $request)
   {
 	$this->job = $this->getRoute()->getObject();
-	$this->forward404Unless($this->job);
+//	$this->$job = $this->getRoute()->getObject();
+	$this->getUser()->addJobToHistory($this->job);
   }
 
 public function executeNew(sfWebRequest $request)
@@ -81,5 +82,16 @@ public function executePublish(sfWebRequest $request)
   $this->getUser()->setFlash('notice', sprintf('Your job is now online for %s days.', sfConfig::get('app_active_days')));
  
   $this->redirect('job_show_user', $job);
+}
+public function executeExtend(sfWebRequest $request)
+{
+  $request->checkCSRFProtection();
+ 
+  $job = $this->getRoute()->getObject();
+  $this->forward404Unless($job->extend());
+ 
+  $this->getUser()->setFlash('notice', sprintf('Your job validity has been extended until %s.', $job->getDateTimeObject('expires_at')->format('m/d/Y')));
+ 
+  $this->redirect($this->generateUrl('job_show_user', $job));
 }
 }
