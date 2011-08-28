@@ -12,7 +12,14 @@ class JobeetAffiliateTable extends Doctrine_Table
      *
      * @return object JobeetAffiliateTable
      */
-    public static function getInstance()
+   public function countToBeActivated()
+  {
+    $q = $this->createQuery('a')
+      ->where('a.is_active = ?', 0);
+ 
+    return $q->count();
+  }
+   public static function getInstance()
     {
         return Doctrine_Core::getTable('JobeetAffiliate');
     }

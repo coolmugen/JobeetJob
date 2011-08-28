@@ -7,11 +7,26 @@
  * 
  * @package    jobeet
  * @subpackage model
- * @author     Your name here
+ * @author     Azamat
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 class JobeetJob extends BaseJobeetJob
 {
+public function asArray()
+{
+	return array(
+      'category'     => $this->getJobeetCategory()->getName(),
+      'type'         => $this->getType(),
+      'company'      => $this->getCompany(),
+      'logo'         => $this->getLogo() ? 'http://'.$host.'/uploads/jobs/'.$this->getLogo() : null,
+      'url'          => $this->getUrl(),
+      'position'     => $this->getPosition(),
+      'location'     => $this->getLocation(),
+      'description'  => $this->getDescription(),
+      'how_to_apply' => $this->getHowToApply(),
+      'expires_at'   => $this->getCreatedAt(),
+    );
+}
 public function extend($force = false)
 {
   if (!$force && !$this->expiresSoon())
