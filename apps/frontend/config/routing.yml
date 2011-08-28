@@ -1,8 +1,10 @@
 category:
-  url: 		/category/:slug
+  url: 		/category/:slug.:sf_format
   class:	sfDoctrineRoute
-  param: 	{ module: category, action: show }
+  param: 	{ module: category, action: show, sf_format: html }
   options:  { model: JobeetCategory, type: object }
+  requeirements:
+    sf_format:  (?:html|atom)
 job_show_user:
   url:     /job/:company_slug/:location_slug/:id/:position_slug
   class:   sfDoctrineRoute

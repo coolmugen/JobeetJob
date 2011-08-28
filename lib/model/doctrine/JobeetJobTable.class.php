@@ -12,6 +12,14 @@ class JobeetJobTable extends Doctrine_Table
     'part-time' => 'Part time',
     'freelance' => 'Freelance',
   );
+  public function getLatestPost()
+  {
+    $q = Doctrine_Query::create()
+      ->from('JobeetJob j');
+    $this->addActiveJobsQuery($q);
+    
+    return $q->fetchOne();
+  }
   public function retrieveBackendJobList(Doctrine_Query $q)
   {
     $rootAlias = $q->getRootAlias();
